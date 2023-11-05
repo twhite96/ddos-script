@@ -23,7 +23,7 @@ W = '\033[0m'
 # Instead of using SOCK_STREAM for TCP connections
 # using SOCK_DGRAM for UDP connections to keep packets small
 # If iterating on this, will use SOCK_STREAM to send bigger packets if I actually understand
-# what that means for the network being scanned
+# what that means for the network being hit
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
