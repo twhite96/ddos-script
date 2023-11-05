@@ -25,6 +25,10 @@ W = '\033[0m'
 # If iterating on this, will use SOCK_STREAM to send bigger packets if I actually understand
 # what that means for the network being hit
 
+# Is there enough precedent with ipv6 addresses to use socket.AF_INET6?
+# How would that work?
+
+# TODO: research ipv6
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
