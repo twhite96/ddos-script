@@ -6,7 +6,7 @@ import argparse
 import threading
 import socket
 
-# TODO: Read docs on time, os, random, and platform
+# TODO: Read docs on time, os, random, threading, and platform
 # TODO: Take questions to Mastodon
 # TODO: Eat good food
 # TODO: Get plenty of water and sleep
@@ -56,6 +56,9 @@ def ddos(target, port, ipaddress):
     except:
         print("some more dummy text yo")
 
+
+# Got this idea from a YouTube video with a guy who admits his script it shitty
+# I guess I don't feel too bad then
 
 for i in range(150):
     thread = threading.Thread(target=ddos)
