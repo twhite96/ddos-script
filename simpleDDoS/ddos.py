@@ -11,12 +11,6 @@ import socket
 # TODO: Get plenty of water and sleep
 
 
-# ANSI colors with proper escape
-R = '\033[31m'
-G = '\033[32m'
-C = '\033[36m'
-W = '\033[0m'
-
 # v1: just create ddos script
 
 # Instead of using SOCK_STREAM for TCP connections
@@ -48,21 +42,12 @@ def check_os():
         os.system("clear")
 
 
-class DDoS:
-    pass
-
-    def __init__(self, target, port, ip):
-        self.target = target
-        self.port = port
-        self.ip = ip
-
-
 # call function to check what system is used
 
 
 # Why use a try
 
-def ddos(target, port, ipaddress):
+def init_app(target, port, ipaddress):
     sent = 0
     try:
         while True:
@@ -78,15 +63,15 @@ def ddos(target, port, ipaddress):
     # Break out of infinite loop
 
     except KeyboardInterrupt:
-        print('\n' + R + '[!]' + C + 'Keyboard Interrupt. Terminating session...' + W)
+        print('\n' + 'Keyboard Interrupt. Terminating session...')
 
     except socket.gaierror:
-        print(R + '[-] ' + C + 'Unknown address.')
-        print(R + '[-] ' + C + 'Please input the correct ip address.')
+        print('Unknown address.')
+        print('Please input the correct ip address.')
 
     except NameError:
-        print(R + '[-] ' + C + 'Unknown address.')
-        print(R + '[-] ' + C + 'Please input the correct ip address.')
+        print('Unknown address.')
+        print('Please input the correct ip address.')
 
 # For introducing to the script later
 
