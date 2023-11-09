@@ -51,7 +51,6 @@ def check_os():
 
 # call function to check what system is used
 
-
 # Why use a try
 
 def ddos(target, port, ip: bool = False):
@@ -87,6 +86,14 @@ def ddos(target, port, ip: bool = False):
 # for i in range(150):
 #     thread = threading.Thread(target=ddos)
 #     thread.start()
+
+# This is the line I use to run this script:
+# python py_ddos.py "192.168.xx.xxx" "port"
+# This is the Error:
+# sock.sendto(bytes1, (net, port))
+# TypeError: 'str' object cannot be interpreted as an integer
+# What am I missing here?
+
 
 if __name__ == "__main__":
     typer.run(ddos)
