@@ -26,8 +26,20 @@ A simple proof of concept DDoS script written in Python.
 
 To use:
 
+Clone the repo:
+
 ```sh
-$ python3 ddos-script.py <hostname> <port>
+$ git clone https://github.com/twhite96/ddos-script.git
+```
+
+then cd into the `src` directory...
+
+```sh
+$ cd src
+```
+
+```sh
+$ python3 ddos.py <hostname> <port>
 ```
 
 
