@@ -5,14 +5,11 @@ A simple proof of concept DDoS script written in Python.
 
 
 
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/twhite96/ddos-script?style=for-the-badge&labelColor=%23000&color=%23fff)
-![GitHub followers](https://img.shields.io/github/followers/twhite96?style=for-the-badge&labelColor=%23000&color=%23fff)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/twhite96/ddos-script?style=for-the-badge&logo=github&logoColor=%23fff&labelColor=%23000&color=%23fff)
+![GitHub followers](https://img.shields.io/github/followers/twhite96?style=for-the-badge&logo=github&logoColor=%23fff&labelColor=%23000&color=%23fff)
 
-![Keybase PGP](https://img.shields.io/keybase/pgp/tiffanyrwhite?style=for-the-badge&labelColor=%23000&color=%2344ad42)
+![Keybase PGP](https://img.shields.io/keybase/pgp/0x8c?style=for-the-badge&logo=keybase&labelColor=%23000&color=%2344AD42)
 ![Mastodon Follow](https://img.shields.io/mastodon/follow/110494047736700791?domain=https%3A%2F%2Finfosec.exchange&style=for-the-badge&labelColor=%23000&color=%2344ad42)
-
-
-
 
 
 
